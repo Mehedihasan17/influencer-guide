@@ -13,4 +13,73 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    margin:0 auto;
+}
+
+/* Heading part  */
+
+.container{
+    max-width:1200px;
+    margin:20px auto;
+}
+.heading{
+    display:flex;
+    justify-content: space-between;
+    align-items: center ;
+    margin-bottom: 30px;
+}
+.title h1{
+    font-size:30px;
+    color:#303538
+}
+.focus{
+    color:goldenrod;
+
+}
+nav ul{
+    display:flex;
+    align-items:center;
+
+}
+nav ul li{
+    list-style: none;
+    margin-right:15px;
+    font-size: 18px;
+    padding:10px;
+
+   
+}
+li a{
+    color:#303538;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Introduction section starts here  */
+.introduction{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:10px;
+    align-items: center;
+}
+.introduction-left h1{
+    font-size: 50px;
+    color:#303538;
+}
+.introduction-left p{
+    line-height: 1.5;
+
+}
+.uni-button{
+background-image: linear-gradient(rgb(255, 183, 0),rgb(206, 147, 0));
+font-weight: 600;
+font-size: 18px;
+color:white;
+outline: 0;
+border:none;
+border-radius: 15px;
+padding:10px 40px;
+}
+.introduction-right img{
+margin-left: 50px;
 }
