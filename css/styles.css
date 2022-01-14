@@ -14,6 +14,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     margin:0 auto;
+    background-color: ;
 }
 
 /* Heading part  */
@@ -82,4 +83,43 @@ padding:10px 40px;
 }
 .introduction-right img{
 margin-left: 50px;
+}
+
+/* Horizontal carrier */
+.divider{
+    border:2px solid lightgrey;
+    width:90%;
+    border-radius:20px;
+    margin:30px;
+
+}
+.logos{
+    display:flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.popular-collections h3{
+    font-size:30px;
+    color:#303538;
+    display:flex;
+   justify-content: center;
+   margin:50px;
+    
+}
+.gallery {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 40px;
+    grid-column-gap: 30px;
+   margin:0 80px;
+}
+.collections img{
+    display:flex;
+    justify-content:center;
+}
+.collections{
+    background-color: white;
+    box-shadow: 0 20px 30px lightgray;
+
 }
