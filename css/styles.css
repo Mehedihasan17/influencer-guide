@@ -80,6 +80,17 @@ outline: 0;
 border:none;
 border-radius: 15px;
 padding:10px 25px;
+
+}
+.uni-button:hover{
+    box-shadow: 0px 6px 7px rgb(206, 147, 0);
+position:relative;
+top:5;
+cursor:pointer;
+}
+.uni-button:active{
+top:0;
+box-shadow: 0 2px 0;
 }
 .fa-angle-double-right{
     padding:0 15px;
@@ -169,7 +180,7 @@ margin-left: 50px;
 .contact{
     display:grid;
     grid-template-columns: repeat(2,1fr);
-    gap:10px;
+    gap:25px;
 }
 .identity img{
     height: 440px;
@@ -179,6 +190,15 @@ width:380px;
     display:flex;
     flex-direction: column;
     align-items: center;
-    
 
+}
+.text{
+    width:100%;
+    margin:12px 0;
+    padding:12px;
+    font-size:16px;
+}
+.collections:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2px 2px rgb(206, 147, 0);
 }
