@@ -27,6 +27,8 @@ body{
     margin-bottom: 30px;
     margin:0 30px;
 }
+/* *Title* */
+
 .title h1{
     font-size:30px;
     color:#303538
@@ -55,6 +57,7 @@ li a{
 }
 
 /* Introduction section starts here  */
+
 .introduction{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
@@ -62,14 +65,143 @@ li a{
     align-items: center;
     margin:0 30px;
 }
-.introduction-left h1{
+.introduction-left h1 span{
     font-size: 50px;
     color:#303538;
 }
+
+.introduction-left  .animation::before{
+    content: 'Start your journey';
+        position: absolute;
+    color:goldenrod;
+    animation: typing 4s linear infinite;
+    }
+    /* Animation part  */
+
+
+    @keyframes typing{
+        0%{
+            content:'|S';
+        }
+        4%{
+            content:'St|';
+        }
+        8%{
+            content:'Sta|';
+        }
+        12%{
+            content:'Star|';
+        }
+        16%{
+            content:'Start|';
+        }
+        20%{
+            content:'Start |';
+        }
+        24%{
+            content:'Start y|';
+        }
+        28%{
+            content:'Start yo|';
+        }
+        32%{
+            content:'Start you|';
+        }
+        36%{
+            content:'Start your|';
+        }
+        40%{
+            content:'Start your |';
+        }
+        44%{
+            content:'Start your j|';
+        }
+        48%{
+            content:'Start your jo|';
+        }
+        52%{
+            content:'Start your jou|';
+        }
+        56%{
+            content:'Start your jour|';
+        }
+        60%{
+            content:'Start your journ|';
+        }
+        64%{
+            content:'Start your journe|';
+        }
+        68%{
+content: 'Start your journey|';
+        }
+        72%{
+            content: 'Start your journey|';
+         }
+         73%{
+            content: 'Start your journe|';
+         }
+         74%{
+            content: 'Start your journ|';
+         }
+         75%{
+            content: 'Start your jour|';
+         }
+         76%{
+            content: 'Start your jou|';
+         }
+         77%{
+            content: 'Start your jo|';
+         }
+         78%{
+            content: 'Start your j|';
+         }
+         79%{
+            content: 'Start your |';
+         }
+         80%{
+            content: 'Start your|';
+         }
+         81%{
+            content: 'Start you|';
+         }
+         82%{
+            content: 'Start yo|';
+         }
+         83%{
+            content: 'Start y|';
+         }
+         84%{
+            content: 'Start |';
+         }
+         85%{
+            content: 'Start|';
+         }
+         86%{
+            content: 'Star|';
+         }
+         87%{
+            content: 'Sta|';
+         }
+         88%{
+            content: 'St|';
+         }
+         89%{
+            content: 'S|';
+         }
+         90%{
+            content: '|';
+         }
+        
+}
+
+
+
 .introduction-left p{
     line-height: 1.5;
 
 }
+/* Button  */
+
 .uni-button{
 background-image: linear-gradient(rgb(255, 183, 0),rgb(206, 147, 0));
 font-weight: 600;
@@ -81,6 +213,9 @@ border-radius: 15px;
 padding:10px 25px;
 
 }
+
+/* Button hover effect  */
+
 .uni-button:hover{
     box-shadow: 0px 6px 7px rgb(206, 147, 0);
 position:relative;
@@ -94,6 +229,9 @@ box-shadow: 0 2px 0;
 .fa-angle-double-right{
     padding:0 15px;
 }
+
+/* Right side  */
+
 .introduction-right img{
 margin-left: 50px;
 }
@@ -110,6 +248,8 @@ margin-left: 50px;
    align-items: center;
   
 }
+
+/* Gallery  */
 
 .popular-collections h3{
     font-size:30px;
@@ -153,24 +293,8 @@ margin-left: 50px;
     box-shadow: 2px 2px 2px 2px rgb(206, 147, 0);
 }
 
-.conclusion{
-    background-color:rgba(202, 129, 113, 0.493);
-    padding:15px;
+/* Contact me  */
 
-}
-.conclusion h2{
-    display:flex;
-    justify-content: center;
-   align-items: center; 
-   margin:0;
-}
-.social-net{
-   display:flex;
-   justify-content: center;
-   flex-direction: column;
-   align-items: center;
-   margin:0;
-}
 .communication a{
     margin:0;
     color:#303538;
@@ -205,9 +329,33 @@ margin-left: 50px;
     padding:12px;
     font-size:16px;
     width:414px;
+}
+/* Footer  */
+
+    .conclusion{
+        background-color:rgba(202, 129, 113, 0.493);
+        padding:15px;
+    
+    }
+    .conclusion h2{
+        display:flex;
+        justify-content: center;
+       align-items: center; 
+       margin:0;
+    }
+    .social-net{
+       display:flex;
+       justify-content: center;
+       flex-direction: column;
+       align-items: center;
+       margin:0;
    
     
 }
+
+/* Responsiveness for MOBILE DEVICE  */
+
+
 @media only screen and (max-width:688px) {
   
   .introduction{
@@ -279,3 +427,82 @@ margin-left: 50px;
   
    
 }
+/* Responsiveness For IPAD  */
+
+
+@media only screen and (max-width:992px) and (min-width:688px) {
+  
+    .introduction{
+        display:grid;
+        grid-template-columns:2, 1fr;
+        justify-content: center;
+    }  
+    .introduction-left{
+        width:200px;
+    }
+   
+    .introduction-right img{
+        width:200px;
+        height:300px;
+        padding:0;
+        margin:0;
+  
+    }
+    .title h1{
+        display:inline;
+        font-size: 18px;
+    }
+    .popular-collections h3{
+        font-size: 50px;
+        display: inline;
+    }
+    .menu{
+        display: none;
+    }
+     .logos{
+         display:none;
+     }
+     .gallery{
+         display:grid;
+         grid-template-columns:2, 1fr;
+         justify-content: column;
+        height:fit-content;
+        width:100px;
+        padding-left: 30px;
+        justify-content: center;
+        align-items: center;
+     } 
+     
+     .popular-collections h3{
+         margin:100px;
+         display:inline;
+         
+     }.contact{
+      display:grid;
+      gap:40px;
+      grid-template-columns:2, 1fr;
+      justify-content: column;
+     height:fit-content;
+     width:250px;
+     padding-left: 30px;
+     justify-content: center;
+     align-items: center;
+  } 
+     .text{
+         width:200px;
+     }
+     .identity img{
+         width:250px;
+         height:300px;
+         margin-left:200px;
+         padding:0;
+         padding-left: 20px;
+     }
+     .conclusion{
+         width:600px;
+     }
+    
+     
+  }
+  /* CSS DONE  */
+  
