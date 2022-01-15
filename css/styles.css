@@ -14,7 +14,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     margin:0 auto;
-    background-color: ;
+    background-image: linear-gradient(rgb(255, 255, 255),rgba(216, 151, 137, 0.281));
 }
 
 /* Heading part  */
@@ -79,7 +79,10 @@ color:white;
 outline: 0;
 border:none;
 border-radius: 15px;
-padding:10px 40px;
+padding:10px 25px;
+}
+.fa-angle-double-right{
+    padding:0 15px;
 }
 .introduction-right img{
 margin-left: 50px;
@@ -104,22 +107,64 @@ margin-left: 50px;
     color:#303538;
     display:flex;
    justify-content: center;
-   margin:50px;
-    
+   margin:50px 0;  
 }
 .gallery {
     display:grid;
     grid-template-columns: repeat(3,1fr);
     grid-row-gap: 40px;
     grid-column-gap: 30px;
-   margin:0 80px;
+   margin:20px 80px;
 }
-.collections img{
-    display:flex;
-    justify-content:center;
+.collections h2,h3{
+    color:#303538;
+    font-size:1.5em;
+}
+.fa-star.filled{
+    color:goldenrod;
+    font-size: small;
+}
+.fa-star.empty{
+    color:gray;
+    font-size: small;
+}
+.half{
+    color:goldenrod;
+    font-size: small;
 }
 .collections{
     background-color: white;
-    box-shadow: 0 20px 30px lightgray;
+    box-shadow: 0 20px 30px rgba(216, 151, 137, 0.507);
+    margin:15px 15px;
+    padding:10px 23px;
+    border-radius: 12px;
+}
+.conclusion{
+    background-color:rgba(202, 129, 113, 0.493);
+    padding:15px;
+
+}
+.conclusion h2{
+    display:flex;
+    justify-content: center;
+   align-items: center; 
+   margin:0;
+}
+.social-net{
+   display:flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   margin:0;
+}
+.communication a{
+    margin:0;
+    color:#303538;
+    background-color:rgb(255, 255, 255) ;
+    border-radius: 50px;
+    font-size: 18px;
+   padding:0 5px;
+   margin:0 5px;
+   
 
 }
