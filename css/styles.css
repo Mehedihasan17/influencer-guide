@@ -293,7 +293,17 @@ margin-left: 50px;
     transform: scale(1.1);
     box-shadow: 2px 2px 2px 2px rgb(206, 147, 0);
 }
-
+.uni-buttons {
+    margin-left:1200px;
+    background-image: linear-gradient(rgb(255, 183, 0),rgb(206, 147, 0));
+font-weight: 600;
+font-size: 15px;
+color:white;
+outline: 0;
+border:none;
+border-radius: 15px;
+padding:10px 15px;
+}
 /* Contact me  */
 
 .communication a{
@@ -366,6 +376,7 @@ margin-left: 50px;
   .introduction-left{
       width:250px;
   }
+
   .introduction-right img{
       width:250px;
       height:300px;
@@ -431,7 +442,7 @@ margin-left: 50px;
 /* Responsiveness For IPAD  */
 
 
-@media only screen and (max-width:992px) and (min-width:688px) {
+@media only screen and (max-width:1026px) and (min-width:688px) {
   
     .introduction{
         display:grid;
@@ -439,7 +450,7 @@ margin-left: 50px;
         justify-content: center;
     }  
     .introduction-left{
-        width:200px;
+        width:500px;
     }
    
     .introduction-right img{
