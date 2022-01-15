@@ -98,6 +98,10 @@ box-shadow: 0 2px 0;
 .introduction-right img{
 margin-left: 50px;
 }
+.introduction-right:hover{
+    transform:rotate(-360deg);
+    transition:transform 2s linear;
+}
 
 /* Horizontal carrier */
 .divider{
@@ -150,6 +154,11 @@ margin-left: 50px;
     padding:10px 23px;
     border-radius: 12px;
 }
+.collections:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2px 2px rgb(206, 147, 0);
+}
+
 .conclusion{
     background-color:rgba(202, 129, 113, 0.493);
     padding:15px;
@@ -197,8 +206,4 @@ width:380px;
     margin:12px 0;
     padding:12px;
     font-size:16px;
-}
-.collections:hover{
-    transform: scale(1.1);
-    box-shadow: 2px 2px 2px 2px rgb(206, 147, 0);
 }
