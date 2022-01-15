@@ -237,7 +237,8 @@ margin-left: 50px;
 }
 .introduction-right:hover{
     transform:rotate(-360deg);
-    transition:transform 2s linear;
+    transition:transform 1s linear;
+    
 }
 
 /* Horizontal carrier */
