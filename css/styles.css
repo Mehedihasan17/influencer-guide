@@ -1,7 +1,7 @@
 /* Fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@700&family=Poppins:wght@500&display=swap');
 /
-* html settings  */
+/* html settings  */ 
 
 *{
     margin:0;
@@ -165,6 +165,9 @@ margin-left: 50px;
     font-size: 18px;
    padding:0 5px;
    margin:0 5px;
-   
-
+}
+.contact{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
